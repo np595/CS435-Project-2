@@ -47,6 +47,7 @@ class Graph:
         return None 
 
 class GraphSearch:
+    #Could do some clean up of past comments that you don't need to elaborate what the code does
     def DFSRec(self, start: Node, end: Node) -> List:
         res=self.DFSRecHelper(start,end,[])
         if end.val in res:
@@ -147,7 +148,7 @@ def createRandomUnweightedGraphIter(n: int) -> Graph:
             randomNum=random.randint(0,99)
             
     return randomGraph
-
+#In response for the 10000, you could make an integer come in that's n for example that's set to 10000, so instead of having the solid value in each, you could just change that single variable
 def BFTRecLinkedList(graph: Graph) -> List:
     search=GraphSearch()
     graph=createLinkedList(10000)
@@ -161,7 +162,7 @@ def BFTIterLinkedList(graph: Graph) -> List:
 
 #Drivers
 search=GraphSearch()
-
+#You could do some clean up here, get rid of past commments and go from there, organize out and leave those comments in specific files for that part
 LL=createLinkedList(100) #0-baseed indexing
 #print(LL) #to view the list
 
